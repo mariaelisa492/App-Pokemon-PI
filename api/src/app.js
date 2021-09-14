@@ -22,7 +22,7 @@ server.use((req, res, next) => {   //esto me permite hacer peticiones del tipo g
 });
 
 server.use('/', routes);
-// server.get('/', (req, res) => {     
+// server.get('/', (req, res) => {      REVISAR PARA MANDAR
 //   res.send('Hello to memories tribe nomina API');
 // });
 
