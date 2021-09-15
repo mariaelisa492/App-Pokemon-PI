@@ -1,7 +1,5 @@
 const { Router } = require('express');
-const axios = require('axios');
-const {Pokemon, Type} = require ('../db');
-const {getAllPoke, getPokeByName, getPokeById} = require ('../controllers/pokemonController');
+const {getAllPoke, getPokeByName, getPokeById, postPokedb} = require ('../controllers/pokemonController');
 
 const router = Router();
 
@@ -15,7 +13,9 @@ router.get('/', async (req, res) => {
         }else{
             const pokeFoundName = await getPokeByName(name);
             //console.log('pokeFound',pokeFoundName);
-            if(pokeFoundName) return res.status(200).json(pokeFoundName)
+            if(pokeFoundName) {
+                return res.status(200).json(pokeFoundName)
+            }
         }
     } catch (error) {
         console.log('entro error');
@@ -28,6 +28,7 @@ router.get('/', async (req, res) => {
 router.get('/:id', async (req, res) => {
     try {
         const {id} = req.params;
+        console.log(id)
         const pokeFoundId = await getPokeById(id);
         //console.log('pokeFound',pokeFoundId);
         if(pokeFoundId) return res.status(200).json(pokeFoundId)
@@ -42,9 +43,13 @@ router.get('/:id', async (req, res) => {
 
 router.post('/', async (req, res) => {
     try {
-        
+        const pokeData = req.body
+        // console.log('holaaaaa', pokeData)
+        await postPokedb(pokeData)
+        return res.status(200).send('Pokemon creado con exito')
+
     } catch (error) {
-        
+        res.status(400).send('Fallo al crear el pokemon')
     }
 });
 
