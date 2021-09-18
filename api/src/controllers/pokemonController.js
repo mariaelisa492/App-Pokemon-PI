@@ -27,9 +27,6 @@ const getPokedb = async () => {
             include: {
                 model: Type,
                 attributes: ['name'],        //me trae el name del type
-                through: {
-                    attributes: [],
-                }
             }
         })
     } catch (error) {
