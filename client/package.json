@@ -9,8 +9,16 @@
     "axios": "^0.21.4",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-redux": "^7.2.5",
+    "react-router-dom": "^5.3.0",
     "react-scripts": "4.0.0",
+    "redux": "^4.1.1",
+    "redux-thunk": "^2.3.0",
+    "sass": "^1.42.0",
     "web-vitals": "^0.2.4"
+  },
+  "devDependencies": {
+    "sass-loader": "^11.1.1"
   },
   "scripts": {
     "start": "react-scripts start",

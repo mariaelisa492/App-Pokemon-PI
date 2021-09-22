@@ -1,0 +1,40 @@
+.pokemonCard {
+    background-color: gray;
+    border-radius: 0.3125rem;
+    display: flex;
+    justify-content: space-around;
+    
+    a {
+        display: flex;
+        background: url('../../assets/img/pokeball.svg') no-repeat;
+        border-radius: 0.3125rem;
+        transition: transform 0.2s;
+        text-decoration: none;
+        color:black;
+
+        &:focus,
+        &:hover {
+            transform: translateY(-0.25rem);
+        }
+
+        .image {
+            display: block;
+            margin: 0 auto;
+            top: -1.25rem;
+            right: 1.25rem;
+
+            img {
+                width: 8.125rem;
+            }
+        }
+
+        .name {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: .25rem;
+            white-space: nowrap;
+
+            color: var(--white);
+        }
+    }
+}

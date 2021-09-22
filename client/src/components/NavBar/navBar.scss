@@ -1,0 +1,16 @@
+.navBar{
+    position: relative;
+    height: 4rem;
+    max-width: 957px;
+    margin: 0 auto;
+    margin-top: 1rem;
+    padding: 0 2rem;
+    border-radius: 0.5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+
+    background: rgb(211, 209, 209);
+    box-shadow: 0rem 0.1875rem 0.375rem var(--shadow-header);
+}
