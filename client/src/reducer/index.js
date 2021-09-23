@@ -34,6 +34,11 @@ export const rootReducer = (state = initialState, action) => {
 					...state,
 					pokemonDetail: action.payload
 				};
+		case 'POKEMON_FILTER_TYPE':
+			return {
+				...state,
+				pokemonsFilter: action.payload
+			};
 		default:
 			return state;
 	}

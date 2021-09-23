@@ -6,10 +6,10 @@ import './card.scss'
 export const Card = ({ id, name, sprite, types }) => {
     return (
         <div className='pokemonCard'>
-            <Link to={'pokemon/' + name}>
+            <Link to={'detail/' + id}>
                 <a>
                     <div>
-                        <h3 className='name'>{name.replace(/\b[a-z]/g,c=>c.toUpperCase())}</h3>
+                        <h3 className={`${'name','capitalizeText'}`}>{name}</h3>
                         <ul className='typeList'>
                             {types.map(type => (
                                 <img src={img[type.name]} alt={`Type: ${type.name}`}/>
@@ -18,7 +18,7 @@ export const Card = ({ id, name, sprite, types }) => {
                     </div>
                     <div className='image'>
                         <img src={sprite}
-                            width={130}
+                            width={200}
                             height={130}
                             alt={name}    
                         />
