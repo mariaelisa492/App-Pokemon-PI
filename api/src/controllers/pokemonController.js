@@ -132,7 +132,7 @@ const objPokeApi = (poke) => {
         height: poke.height,
         weight: poke.weight,
         sprite: poke.sprites.other.dream_world.front_default,
-        types: poke.types.length < 2 ? [{ name: poke.types[0].type}] : [{ name: poke.types[0].type}, { name: poke.types[1].type}]
+        types: poke.types.length < 2 ? [{ name: poke.types[0].type.name}] : [{ name: poke.types[0].type.name}, { name: poke.types[1].type.name}]
     };
     return objPokeapi
 };
