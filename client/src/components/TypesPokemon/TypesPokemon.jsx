@@ -1,28 +1,29 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { getPokemonsTypes } from '../../actions';
+import { getPokemonsTypes, filterType} from '../../actions';
 import imgType from '../../helpers/powerTypesIcon';
 import './typesPokemon.scss'
 
 
-export const TypesPokemon = ({pokeTotal, setPokeCurrent}) => {
+export const TypesPokemon = ({setPokeCurrent}) => {
 
-    const types = useSelector(state => state.pokemonsTypes);
     const dispatch = useDispatch();
+    const types = useSelector(state => state.pokemonsTypes);
+    const pokeFilter = useSelector(state => state.pokemonsFilter)
     
     useEffect(() => {
         dispatch(getPokemonsTypes())
     }, [dispatch])
-    
-    const handlerChange = (type) => {
-        const pokeFilter = pokeTotal.filter(poke => poke.types.map(type => type.name)[0] === type || poke.types.map(type => type.name)[1] === type)
-        setPokeCurrent(pokeFilter)
-    }
 
+    useEffect(() => {
+        setPokeCurrent(pokeFilter)
+    }, [pokeFilter, setPokeCurrent])
+    
+    
     return (
         <div className = "divTypes">
             {types.map( (type) => ( (type !== 'unknown' && type !== 'shadow') && 
-                <button className='typesFilterButton' key={type} type="button" onClick={() => handlerChange(type)}>
+                <button className='typesFilterButton' key={type} type="button" onClick={() =>dispatch(filterType(type))}>
                     <div className = "imageType">
                         <img src={imgType[type]} alt={`Type: ${type}`}/>
                     </div>

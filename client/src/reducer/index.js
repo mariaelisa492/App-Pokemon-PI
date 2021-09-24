@@ -22,7 +22,7 @@ export const rootReducer = (state = initialState, action) => {
 		case 'GET_POKEMON_NAME':
 			return{
 				...state,
-				pokemonsTotal: action.payload
+				pokemonsFilter: action.payload
 			};
 		case 'ADD_POKEMON':
 			return{

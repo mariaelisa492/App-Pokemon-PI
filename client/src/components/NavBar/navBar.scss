@@ -13,4 +13,20 @@
 
     background: rgb(211, 209, 209);
     box-shadow: 0rem 0.1875rem 0.375rem var(--shadow-header);
+
+    .homeButton{
+        background: transparent;
+        border: 0;
+    }
+
+    .imgHome{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-radius: 10rem;
+        margin-bottom: .25rem;
+        cursor: pointer;
+    }
 }

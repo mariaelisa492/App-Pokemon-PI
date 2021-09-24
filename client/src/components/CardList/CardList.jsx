@@ -6,7 +6,7 @@ export const CardList = ({pokeCurrent}) => {
 
     return (
         <div className='cardList'>
-			{
+			{Array.isArray(pokeCurrent) ?
 				pokeCurrent.map(poke => (
                 <Card 
 						key={poke.id}
@@ -16,7 +16,13 @@ export const CardList = ({pokeCurrent}) => {
 						types={poke.types}
 					/>
                 ))
-			}
+			:<Card 
+			key={pokeCurrent.id}
+			id={pokeCurrent.id}
+			name={pokeCurrent.name}
+			sprite={pokeCurrent.sprite}
+			types={pokeCurrent.types}
+		/>}
 		</div>
     )
 }
