@@ -28,9 +28,9 @@ export const getPokemonsTypes = () => {
     }
 };
 
-export const filterType = (pokemonsTotal) => {
+export const filterType = (type) => {
     return async (dispatch) =>
-        dispatch({ type: 'POKEMON_FILTER_TYPE', payload: pokemonsTotal })
+        dispatch({ type: 'POKEMON_FILTER_TYPE', payload: type })
 };
 
 export const getPokemonDetail = (id) => {

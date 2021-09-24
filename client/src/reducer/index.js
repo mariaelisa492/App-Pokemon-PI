@@ -37,7 +37,7 @@ export const rootReducer = (state = initialState, action) => {
 		case 'POKEMON_FILTER_TYPE':
 			return {
 				...state,
-				pokemonsFilter: action.payload
+				pokemonsFilter: state.pokemonsTotal.filter(poke => poke.types.map(type => type.name)[0] === action.payload || poke.types.map(type => type.name)[1] === action.payload)
 			};
 		default:
 			return state;
