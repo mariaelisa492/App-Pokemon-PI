@@ -1,11 +1,11 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 
-export const Button = () => {
+export const Button = ({link, name}) => {
     return (
         <div>
-            <Link to='/home'>
-            <button>Let's Go</button>
+            <Link to={link}>
+            <button>{name}</button>
             </Link>
         </div>
     )

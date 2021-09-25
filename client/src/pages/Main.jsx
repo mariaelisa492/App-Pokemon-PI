@@ -7,7 +7,7 @@ export const Main = () => {
     return (
         <div>
             <img src={Logo} alt="PruebaInicio" />
-            <Button />
+            <Button link={'/home'} name={"Let's Go"}/>
         </div>
     )
 }

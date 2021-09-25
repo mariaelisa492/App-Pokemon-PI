@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import {getPokemonName} from '../../actions'
+import logoLupa from '../../assets/img/lupa.png'
 
 import './search.scss'
 
@@ -33,7 +34,7 @@ export const Search = ({setPokeCurrent}) => {
                     value = {inputValue}              //el value se va actualizando
                     onChange = {handleInputChange} 
                 />
-                <button type="button" onClick={handleClick}>Search</button>
+                <button type="button" onClick={handleClick}><img src={logoLupa} width="50" height="50"/></button>
             </div>
         </div>
     )

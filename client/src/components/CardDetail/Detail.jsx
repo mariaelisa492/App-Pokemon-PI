@@ -1,24 +1,24 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
+import { useParams } from 'react-router';
 import { getPokemonDetail } from '../../actions';
-import { NavBar } from '../NavBar/NavBar';
 import imgTypes from '../../helpers/powerTypesIcon';
 import { Button } from '../Button/Button';
 import './detail.scss'
 
-export const Detail = ({match}) => {
+export const Detail = () => {
 const dispatch = useDispatch();
 const pokemonDetail = useSelector(state => state.pokemonDetail);
+const {id} = useParams();
 
 useEffect(() => {
-    dispatch(getPokemonDetail(match.params.id))
+    dispatch(getPokemonDetail(id))
 }, [dispatch])
 
-const {id, sprite, life, types, name, height, attack, defense,  speed, weight} = pokemonDetail;
+const {sprite, life, types, name, height, attack, defense,  speed, weight} = pokemonDetail;
 
     return (
         <>
-            <NavBar />
             {sprite && types && name ?
             <main  className="containerDetail">
                 <div className = "detailCard">

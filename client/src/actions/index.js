@@ -60,4 +60,3 @@ export const getPokemonName = (name) => {
         }
     }
 }
-
