@@ -87,12 +87,9 @@ const getPokeByName = async (name) => {
 //me permite obtener pokemon por id
 const getPokeById = async (id) => {
     try {
-        const searchPokeIdDB = await Pokemon.findOne({
-            id,
-            include: { model: Type }
-        })
-        if (searchPokeIdDB) {
-            console.log('entro a db por id')
+        if (id.length > 2) {
+            const searchPokeIdDB = await Pokemon.findOne({where: {id}, include: Type});
+            console.log('POKEMON BASE DE DATOS', searchPokeIdDB)
             let pokedbId = {
                 id: searchPokeIdDB.id,
                 name: searchPokeIdDB.name,
@@ -109,7 +106,7 @@ const getPokeById = async (id) => {
         } else {
             const searchPokeapiId = await axios.get(`${URL_API_POKEMON_NAME_OR_ID}${id.toString()}`);
             const foundPokeapiId = objPokeApi(searchPokeapiId.data);
-            console.log('foundPokeapi', foundPokeapiId)
+            // console.log('foundPokeapi', foundPokeapiId)
             return foundPokeapiId;     //pokemon por id en pokeapi
         }
     } catch (error) {
