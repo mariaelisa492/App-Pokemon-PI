@@ -5,6 +5,7 @@
     background: url('../../assets/img/pokeball.svg') no-repeat;
     background-position: right -1.5rem top -1.5rem;
     background-size: 16rem;
+    
 
     .detailCard{
         display: flex;
@@ -12,9 +13,46 @@
         align-items: center;
         position: inherit;
         z-index: 2;
-    }
+    };
 
-    
+    .pokemonData {
+        padding: 3rem 2rem;
+        border-radius: 2rem 2rem 2rem 2rem;
+        border: 1px solid red;
+        border-top: 0;
+        background-color: var(--bg-color);
 
+        .titleSection {
+            font-weight: bold;
+            font-size: 1.25rem;
+            margin-bottom: 1.5rem;
+        }
 
+        section {
+            margin-bottom: 2.5rem;
+            // &:last-child {
+            //     margin: 0;
+            // }
+        }
+    }   
+
+    .pokedexDataList{
+            li {
+                display: flex;
+                align-items: center;
+                margin-bottom: 1.25rem;
+
+                .label {
+                    display: block;
+                    font-weight: 500;
+                    width: 9.25rem;
+                    color: black;
+                }
+
+                .value {
+                    display: block;
+                    font-size: 1.125rem;
+                }
+            }
+        }
 }

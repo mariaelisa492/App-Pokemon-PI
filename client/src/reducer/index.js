@@ -3,7 +3,7 @@ const initialState = {
 	pokemonsTotal: [],
 	pokemonDetail: {},
 	pokemonsTypes: [],
-	pokemonsFilter: []
+	pokemonsFilter: [],
 };
 
 export const rootReducer = (state = initialState, action) => {
@@ -23,11 +23,6 @@ export const rootReducer = (state = initialState, action) => {
 			return {
 				...state,
 				pokemonsFilter: action.payload
-			};
-		case 'ADD_POKEMON':
-			return {
-				...state,
-				pokemonsTotal: [action.payload, ...state.pokemonsTotal]
 			};
 		case 'GET_POKEMON_DETAIL':
 			return {

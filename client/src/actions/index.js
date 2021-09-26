@@ -60,3 +60,25 @@ export const getPokemonName = (name) => {
         }
     }
 }
+
+export const addPokemon = (newPoke) => {
+    return async () => {
+        try {
+            const objNewPoke = {
+                name: newPoke.name,
+                life: newPoke.life,
+                attack: newPoke.attack,
+                defense: newPoke.defense,
+                speed: newPoke.speed,
+                weight: newPoke.weight,
+                height: newPoke.height,
+                types: [newPoke.type1, newPoke.type2],
+            }
+            console.log("newPoke2", objNewPoke)
+            const createPoke = await axios.post("http://localhost:3001/pokemons", objNewPoke);
+            return console.log(createPoke.data)
+        } catch (error) {
+            console.log(error)
+        }
+    }
+}

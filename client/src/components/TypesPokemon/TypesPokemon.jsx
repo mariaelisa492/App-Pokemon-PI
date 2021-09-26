@@ -22,14 +22,14 @@ export const TypesPokemon = ({setPokeCurrent}) => {
     
     return (
         <div className = "divTypes">
-            {types.map( (type) => ( (type !== 'unknown' && type !== 'shadow') && 
+            {types.map( (type) => 
                 <button className='typesFilterButton' key={type} type="button" onClick={() =>dispatch(filterType(type))}>
                     <div className = "imageType">
                         <img src={imgType[type]} alt={`Type: ${type}`}/>
                     </div>
                     <span className = 'capitalizeText'>{type}</span>
                 </button>
-            ))}
+            )}
         </div>
     )
 }
