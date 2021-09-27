@@ -55,24 +55,24 @@ export const Detail = () => {
                         </section>
                         <section>
                             <p className="titleSection">Statistics</p>
-                            <div className='divSStats'>
-                                <div className='divSpanStats'><span>{`Life: ${life}`}</span></div>
-                                <progress max='255' value={life} className='divPStats'>{life}</progress>
+                            <div>
+                                <div><span>{`Life: ${life}`}</span></div>
+                                <progress max='255' value={life}>{life}</progress>
                             </div>
 
-                            <div className='divSStats'>
-                                <div className='divSpanStats'><span>{`Attack: ${attack}`}</span></div>
-                                <progress max='255' value={attack} className='divPStats'>{attack}</progress>
+                            <div>
+                                <div><span>{`Attack: ${attack}`}</span></div>
+                                <progress max='255' value={attack}>{attack}</progress>
                             </div>
 
-                            <div className='divSStats'>
-                                <div className='divSpanStats'><span>{`Defense: ${defense}`}</span></div>
-                                <progress max='255' value={defense} className='divPStats'>{defense}</progress>
+                            <div>
+                                <div><span>{`Defense: ${defense}`}</span></div>
+                                <progress max='255' value={defense}>{defense}</progress>
                             </div>
 
-                            <div className='divSStats'>
-                                <div className='divSpanStats'><span>{`Speed: ${speed}`}</span></div>
-                                <progress max='255' value={speed} className='divPStats'>{speed}</progress>
+                            <div>
+                                <div><span>{`Speed: ${speed}`}</span></div>
+                                <progress max='255' value={speed}>{speed}</progress>
                             </div>
                         </section>
                     </div>

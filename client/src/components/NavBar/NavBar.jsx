@@ -27,7 +27,7 @@ export const NavBar = () => {
                 </Link>
             </div>
             <div>
-                <Button link={'/create'} name={"Create Pokemon"}/>
+                <Button link={'/create'} name={"Create"} classname={"secundary"}/>
             </div>
         </header>
     )

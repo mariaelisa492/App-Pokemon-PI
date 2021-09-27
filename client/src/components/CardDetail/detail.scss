@@ -1,10 +1,10 @@
 .containerDetail{
     max-width: 700px;
+    background: url('../../assets/img/fondoColor.jpg') no-repeat;
     margin: 3rem auto;
     border-radius: 1rem;
-    background: url('../../assets/img/pokeball.svg') no-repeat;
     background-position: right -1.5rem top -1.5rem;
-    background-size: 16rem;
+    background-size: 47rem;
     
 
     .detailCard{
@@ -12,40 +12,47 @@
         justify-content: space-around;
         align-items: center;
         position: inherit;
-        z-index: 2;
+        border-radius: inherit;
+        padding:35px 0px 45px 16px
     };
 
     .pokemonData {
-        padding: 3rem 2rem;
+        padding: 0.5rem 2rem 2rem 2rem;
         border-radius: 2rem 2rem 2rem 2rem;
-        border: 1px solid red;
-        border-top: 0;
-        background-color: var(--bg-color);
+        border: 2px solid blue;
+        margin: -34px 0px 10px 1px;
+        background-color: white;
+        display: flex;
+        justify-content: space-around;
 
         .titleSection {
             font-weight: bold;
-            font-size: 1.25rem;
+            font-size: 2rem;
             margin-bottom: 1.5rem;
+            text-align: center;
         }
 
         section {
-            margin-bottom: 2.5rem;
-            // &:last-child {
-            //     margin: 0;
-            // }
+            margin: 0px 30px 7px 0px;
+            padding: 0px 40px;
         }
+
     }   
 
     .pokedexDataList{
+        padding: 0px 36px 28px 0px;
+
             li {
                 display: flex;
+                justify-content: start;
                 align-items: center;
                 margin-bottom: 1.25rem;
 
                 .label {
                     display: block;
-                    font-weight: 500;
-                    width: 9.25rem;
+                    font-weight: bold;
+                    text-align: start;
+                    width: 5.25rem;
                     color: black;
                 }
 

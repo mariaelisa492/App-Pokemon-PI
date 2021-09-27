@@ -1,5 +1,5 @@
 .pokemonCard {
-    background-color: gray;
+    background: url('../../assets/img/fondoColor.jpg') no-repeat;
     border-radius: 0.3125rem;
     display: flex;
     justify-content: space-around;
@@ -35,7 +35,7 @@
             margin-bottom: .25rem;
             white-space: nowrap;
 
-            color: var(--white);
+            color: black;
         }
     }
 }
