@@ -17,15 +17,20 @@ export const Detail = () => {
 
     const { sprite, life, types, name, height, attack, defense, speed, weight } = pokemonDetail;
 
+    const truncateString = (str, num) => {
+        if (str.length <= num) return str
+        return str.slice(0, num) + '...'
+    }
+
     return (
         <>
             {sprite && types && name ?
                 <main className="containerDetail">
                     <div className="detailCard">
-                        <h3 className="capitalizeText">{name}</h3>
+                        <h2 className="capitalizeText">{name}</h2>
                         <ul className="typelist">
                             {types.map(type => (
-                                <li type="none" key={type.name} className="typeName">
+                                <li type="none" key={id} className="typeName">
                                     <img className="imgTypes" src={imgTypes[type.name]} alt={`Type: ${type.name}`} />
                                     {type.name.replace(/\b[a-z]/g, c => c.toUpperCase())}
                                 </li>
@@ -42,13 +47,13 @@ export const Detail = () => {
                                 <li>
                                     <span className="label">Height</span>
                                     <div>
-                                        <span className="value">{height/10}m</span>
+                                        <span className="value">{height / 10}m</span>
                                     </div>
                                 </li>
                                 <li>
                                     <span className="label">Weight</span>
                                     <div>
-                                        <span className="value">{weight/10}kg</span>
+                                        <span className="value">{weight / 10}kg</span>
                                     </div>
                                 </li>
                             </ul>
@@ -75,6 +80,11 @@ export const Detail = () => {
                                 <progress max='255' value={speed}>{speed}</progress>
                             </div>
                         </section>
+                        <div>
+                            <span>
+                                <h5>#{truncateString(id.toString(),4)}</h5>
+                            </span>
+                        </div>
                     </div>
                 </main>
                 : <Button />

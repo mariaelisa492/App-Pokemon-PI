@@ -1,7 +1,7 @@
 .form-container{
     max-width: 500px;
     background: url('../../assets/img/yellow.jpg') no-repeat;
-    margin: 1rem auto;
+    margin: 3rem auto;
     border-radius: 1rem;
     background-position: right -1.5rem top -1.5rem;
     background-size: 33rem;
@@ -62,7 +62,7 @@
 
         .action-button {
             width: 100px;
-            background: yellow;
+            background: rgba(244, 208, 63, 1);
             font-weight: bold;
             color: black;
             border: 0 none;

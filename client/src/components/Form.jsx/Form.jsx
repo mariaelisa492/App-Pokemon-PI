@@ -90,7 +90,7 @@ export const Form = () => {
 
                     <div className = "dropdown">
                         <select name='type1' onChange={handleInputChange} className='capitalizeText'>
-                            <option value="hide">Type One</option>
+                            <option value="Type One">Type One</option>
                             {pokeTypes.map(type =>
                                 <option value={type} key={type} className='capitalizeText'>{type}</option>
                             )}
@@ -98,7 +98,7 @@ export const Form = () => {
                     </div>
                     <div className = "dropdown">
                         <select name='type2' onChange={handleInputChange} className='capitalizeText'>
-                            <option value="hide">Type Two</option>
+                            <option value="Type Two">Type Two</option>
                             {pokeTypes.map(type =>
                                 <option value={type} key={type} className='capitalizeText'>{type}</option>
                             )}

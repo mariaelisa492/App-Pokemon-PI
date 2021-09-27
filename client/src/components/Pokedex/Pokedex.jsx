@@ -16,8 +16,7 @@ export const Pokedex = ({pokeTotal}) => {
     },[pokeTotal])
 
     return (
-        <div>
-            <div><h2>Welcome to Pokedex MariaDev </h2></div>
+        <div className="page-principal">
             <Search setPokeCurrent={setPokeCurrent}/>
             <TypesPokemon setPokeCurrent={setPokeCurrent}/>
             {(pokeFilter.length > 0 || !Array.isArray(pokeFilter)) &&

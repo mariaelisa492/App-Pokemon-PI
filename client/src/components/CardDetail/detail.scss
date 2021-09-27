@@ -19,8 +19,8 @@
     .pokemonData {
         padding: 0.5rem 2rem 2rem 2rem;
         border-radius: 2rem 2rem 2rem 2rem;
-        border: 2px solid blue;
-        margin: -34px 0px 10px 1px;
+        border: 2px solid rgba(44, 130, 201, 1); 
+        margin: -34px 0px 10px 0px;
         background-color: white;
         display: flex;
         justify-content: space-around;
@@ -37,29 +37,29 @@
             padding: 0px 40px;
         }
 
-    }   
-
-    .pokedexDataList{
-        padding: 0px 36px 28px 0px;
-
-            li {
-                display: flex;
-                justify-content: start;
-                align-items: center;
-                margin-bottom: 1.25rem;
-
-                .label {
-                    display: block;
-                    font-weight: bold;
-                    text-align: start;
-                    width: 5.25rem;
-                    color: black;
-                }
-
-                .value {
-                    display: block;
-                    font-size: 1.125rem;
+        .pokedexDataList{
+            padding: 0px 36px 28px 0px;
+    
+                li {
+                    display: flex;
+                    justify-content: start;
+                    align-items: center;
+                    margin-bottom: 1.25rem;
+    
+                    .label {
+                        display: block;
+                        font-weight: bold;
+                        text-align: start;
+                        width: 5.25rem;
+                        color: black;
+                    }
+    
+                    .value {
+                        display: block;
+                        font-size: 1.125rem;
+                    }
                 }
             }
-        }
+
+    }   
 }
