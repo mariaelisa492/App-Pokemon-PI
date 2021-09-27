@@ -6,15 +6,20 @@ export const Sort = ({pokeCurrent, setPokeCurrent, pokeTotal}) => {
     const filterAndOrderBy=(value)=>{
         switch(value){
 			case 'asc':
-				orderPokeAlphabet(value)
+				orderPokeAlphabet(value);
+                break
 			case 'desc':
-				orderPokeAlphabet(value)
+				orderPokeAlphabet(value);
+                break
 			case 'more_attack':
-				orderPokeAttack(value)
+				orderPokeAttack(value);
+                break
 			case 'less_attack':
-                orderPokeAttack(value)
+                orderPokeAttack(value);
+                break
             case 'my_poke':
-				myPoke(value)
+				myPoke(value);
+                break
 			default:
 				break;
 		}   

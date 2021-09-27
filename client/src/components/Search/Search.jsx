@@ -34,7 +34,7 @@ export const Search = ({setPokeCurrent}) => {
                     value = {inputValue}              //el value se va actualizando
                     onChange = {handleInputChange} 
                 />
-                <button type="button" onClick={handleClick}><img src={logoLupa} width="50" height="50"/></button>
+                <button type="button" onClick={handleClick}><img src={logoLupa} width="50" height="50" alt="search pokemon"/></button>
             </div>
         </div>
     )
