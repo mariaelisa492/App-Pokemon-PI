@@ -1,19 +1,19 @@
 .primary {
-	background: red;
-	border: 0 none;
-	border-radius: 5px;
-	cursor: pointer;
-	color: white;
-	font-weight: bold;
-	font-family: 'Quicksand', sans-serif;
-	font-weight: 900;
-	margin: 10px 5px;
-	padding: 10px 5px;
-	width: 100px;
+	background: rgba(217, 30, 24, 1);
+    border: 0 none;
+    border-radius: 50%;
+    cursor: pointer;
+    color: white;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 900;
+    font-size: 22px;
+    margin: -37px 1px;
+    padding: 33px 14px;
+    width: 118px;
 
 	&:hover,
 	&:focus {
-		box-shadow: 0 0 0 2px white, 0 0 0 3px red;
+		box-shadow: 0 0 0 2px white, 0 0 0 3px rgba(217, 30, 24, 1);
 	}
 }
 
@@ -24,12 +24,12 @@
 	cursor: pointer;
 	display: inline-block;
     font-weight: bold;
-	font-size: 14px;
+	font-size: 18px;
 	font-family: 'Quicksand', sans-serif;
 	font-weight: 900;
     text-align: center;
 	transition: all .3s;
-	padding: 25px 7px 19px 7px;
+	padding: 30px 14px 26px 14px;
 	position: relative;
 	overflow: hidden;
 	z-index: 1;
@@ -50,7 +50,7 @@
 		left: 0;
 		width: 0%;
 		height: 100%;
-		background: yellow;
+		background: rgba(247, 202, 24, 1);
 		transition: all .3s;
 		border-radius: 10rem;
 		z-index: -1;

@@ -17,7 +17,6 @@ export const Form = () => {
         type1: '',
         type2: '',
     });
-    // const [errors, setErrors] = useState({});
 
     useEffect(() => {
         dispatch(getPokemonsTypes())
@@ -25,12 +24,10 @@ export const Form = () => {
 
     const handleInputChange = event => {
         setInput((prev) => ({ ...prev, [event.target.name]: event.target.value }));
-        // setErrors(validate({...input, [event.target.name]: event.target.value}));
     }
 
     const handleSubmit = event => {
         event.preventDefault();
-        console.log("newPoke1", input)
         dispatch(addPokemon(input));
         setInput({
             name: '',

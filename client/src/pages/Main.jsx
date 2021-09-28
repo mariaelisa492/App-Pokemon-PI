@@ -5,8 +5,8 @@ import './main.scss'
 
 export const Main = () => {
     return (
-        <div>
-            <img src={Logo} alt="PruebaInicio" />
+        <div className="main">
+            <img src={Logo} alt="PruebaInicio" width="680" height="500" className="img-main"/>
             <Button link={'/home'} name={"Let's Go"} classname={"primary"}/>
         </div>
     )

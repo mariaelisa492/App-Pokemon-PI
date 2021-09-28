@@ -5,6 +5,7 @@
     border-radius: 1rem;
     background-position: right -1.5rem top -1.5rem;
     background-size: 33rem;
+    font-family: "Quicksand", sans-serif;
 
     .detailCard{
         display: flex;
@@ -19,17 +20,11 @@
             text-align: center;
             margin: -80px 10px 10px 5px
         }
-        .message{
-            color: white;
-            font-weight: bold;
-            margin: 5px 25px 5px 5px;
-            font-size: 0.8rem
-        }
     };
 
     .pokemonData {
         border-radius: 2rem 2rem 1rem 1rem;
-        border: 2px solid red;
+        border: 2px solid rgba(217, 30, 24, 1);
         background-color: white;
         
         .divCreate{
@@ -55,7 +50,7 @@
             margin-bottom: 10px;
             width: 100%;
             box-sizing: border-box;
-            font-family: montserrat;
+            font-family: "Quicksand", sans-serif;
             color: #2C3E50;
             font-size: 13px;
         }
@@ -70,10 +65,11 @@
             cursor: pointer;
             padding: 10px 5px;
             margin: 10px 5px;
+            font-family: "Quicksand", sans-serif;
 
             &:hover, 
             &:focus {
-            box-shadow: 0 0 0 2px red, 0 0 0 3px red;
+            box-shadow: 0 0 0 3px rgba(217, 30, 24, 1);
             }
         }
 
@@ -89,9 +85,7 @@
             font-size: 13px;
             text-overflow: '';
             -webkit-appearance: button; 
-        }
-        
-    }
-
-    
+            font-family: "Quicksand", sans-serif;
+        }  
+    }   
 }

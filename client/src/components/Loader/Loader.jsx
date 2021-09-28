@@ -7,8 +7,10 @@ function Loader() {
             <img 
 				src={pikachuLoader}
 				alt='Pikachu loader'
+                width="300"
+                height="250"
 			/>
-            <span className="loading">Cargando...</span>
+            <span className="loading">Loading...</span>
         </div> 
     )
 }

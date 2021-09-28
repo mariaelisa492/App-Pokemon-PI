@@ -9,7 +9,7 @@ export const PokeNotFound = () => {
 				src={poke_not_found}
 				alt='Pikachu loader'
 			/>
-            <span className="title">Pokemon no encontrado</span>
+            <span className="title">Pokemon not found</span>
         </div> 
     )
 }

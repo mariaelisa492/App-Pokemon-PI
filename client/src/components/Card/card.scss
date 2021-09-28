@@ -1,6 +1,6 @@
 .pokemonCard {
     background: url('../../assets/img/fondoColor.jpg') no-repeat;
-    border-radius: 0.3125rem;
+    border-radius: 2.3125rem;
     display: flex;
     justify-content: space-around;
     
@@ -11,8 +11,8 @@
         transition: transform 0.2s;
         text-decoration: none;
         color:black;
-        font-family: 'Quicksand', sans-serif;
-        font-weight: 900 bolder;
+        font-family: 'Ubuntu', sans-serif;
+        font-size:18px;
 
         &:focus,
         &:hover {
@@ -27,16 +27,8 @@
 
             img {
                 width: 8.1251rem;
-
             }
         }
-
-        // .name {
-        //     font-size: 5rem;
-        //     font-weight: 100;
-        //     margin-bottom: .25rem;
-        //     white-space: nowrap;
-        //     color: black;
-        // }
     }
 }
+

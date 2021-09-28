@@ -1,16 +1,20 @@
 .prev-next {
     & button{
-        color: black;
-        padding: 8px 16px;
+        border:0px;
+        padding: 10px 18px;
         background-color: #2c82c9;
         color: white;
         cursor: pointer;
         border-radius: 9px;
+        font-size: 16px;
+        font-family: "Quicksand", sans-serif;
     }
     & label{
         color: black; 
         font-size: large; 
         font-weight: bold;
         margin: 0 10px;
+        text-decoration: underline;
+        font-family: "Quicksand", sans-serif;
     }
 }

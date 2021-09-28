@@ -12,15 +12,15 @@ export const NavBar = () => {
     return (
         <header className='navBar'>
             <div className='return'>
-                <Link to={'/main'}> <img src={pokebola} alt="pokepola" height='50' width='50' /></Link>
+                <Link to={'/main'}> <img src={pokebola} alt="pokepola" height='75' width='75' /></Link>
             </div>
             <div>
                 <Link to={'/home'}>
                     <button className='homeButton' type="button" onClick={() =>dispatch(getPokemons())}>
                     <img className = 'imgHome'
                         src={Logo}
-                        width={170}
-                        height={130}
+                        width={290}
+                        height={210}
                         alt="PruebaInicio" />
                     </button>
                     

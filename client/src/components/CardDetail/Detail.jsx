@@ -28,9 +28,9 @@ export const Detail = () => {
                 <main className="containerDetail">
                     <div className="detailCard">
                         <h1 className="capitalizeText">{name}</h1>
-                        <ul className="typelist">
+                        <ul>
                             {types.map(type => (
-                                <li type="none" key={id} className="typeName">
+                                <li type="none" key={id} >
                                     <img className="imgTypes" src={imgTypes[type.name]} alt={`Type: ${type.name}`} />
                                     {type.name.replace(/\b[a-z]/g, c => c.toUpperCase())}
                                 </li>

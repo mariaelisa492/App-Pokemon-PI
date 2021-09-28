@@ -2,7 +2,7 @@ import React from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import { getPokemons } from '../../actions'
 
-export const Clear = () => {
+export const Clean = () => {
     const pokeFilter = useSelector(state => state.pokemonsFilter);
     const dispatch = useDispatch();
 
@@ -15,4 +15,4 @@ export const Clear = () => {
             }
         </div>
     )
-}
+};

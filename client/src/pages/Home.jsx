@@ -18,7 +18,6 @@ export const Home = () => {
         <div>
             <NavBar />
             {pokeTotal.length > 0 ? <Pokedex pokeTotal={pokeTotal}/> : <Loader/>}
-            
         </div>
     )
 }

@@ -2,7 +2,7 @@
     width: 22rem;
     margin: 0 auto 2rem auto;
     display: flex;
-    position: relative;
+    position: relative;  
 
     div {
         width: 100%;
@@ -10,22 +10,21 @@
         input {
             -webkit-appearance: none;
             font-size: initial;
-            flex: 1;
             padding-left: 1rem;
             padding-right: 1rem;
-            height: 3rem;
-            width: 100%;
-            border-radius: 0.5rem;
+            height: 3.5rem;
+            width: 23.2rem;
+            margin-left: -18px;
+            border-radius: 2.5rem;
             outline: none;
-
             color: black;
             border: 2px solid  rgba(44, 130, 201, 1);  
             background-color: rgba(245, 245, 245, 0.527);
-
             transition: all .2s;
+            font-family: "Quicksand", sans-serif;  
 
             &:focus {
-                border-color:black; 
+                border-color:#006eab
             }
 
             &::placeholder {

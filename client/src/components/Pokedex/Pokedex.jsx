@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { CardList } from '../CardList/CardList';
 import { TypesPokemon } from '../TypesPokemon/TypesPokemon';
 import {Search} from '../Search/Search';
-import { Clear } from '../Clear/Clear';
+import { Clean } from '../Clean/Clean';
 import { Sort } from '../Sort/Sort';
 import { Pagination } from '../Pagination/Pagination';
 import {PokeNotFound} from '../pokeNotFound/PokeNotFound'
@@ -21,7 +21,7 @@ export const Pokedex = ({pokeTotal}) => {
             <Search setPokeCurrent={setPokeCurrent}/>
             <TypesPokemon setPokeCurrent={setPokeCurrent}/>
             <Sort pokeTotal={pokeTotal} pokeCurrent={pokeCurrent} setPokeCurrent={setPokeCurrent}/>
-            <Clear />
+            <Clean />
             {(pokeCurrent.length > 0 || (pokeCurrent.name !== undefined && pokeCurrent.name !== 'Error'))? <CardList pokeCurrent={pokeCurrent}/> : <PokeNotFound/>}
             <Pagination pokeTotal={pokeTotal} setPokeCurrent={setPokeCurrent}/>
         </div>
