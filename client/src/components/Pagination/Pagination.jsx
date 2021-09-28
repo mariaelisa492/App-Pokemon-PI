@@ -1,10 +1,10 @@
-import React, { useState } from 'react'
-
-
+import React, { useEffect, useState } from 'react'
+import './paginator.scss';
 
 export const Pagination = ({ pokeTotal, setPokeCurrent }) => {
     const cards = 9;
     const [currentPag, setCurrentPag] = useState(0);
+
 
     const next = () => {
         const totalPoke = pokeTotal.length
@@ -25,7 +25,7 @@ export const Pagination = ({ pokeTotal, setPokeCurrent }) => {
 
     return (
         <div>
-            <div className='camp_i'>
+            <div className='prev-next'>
                 <button onClick={()=>prev()}>Prev</button>
                 <label> {currentPag + 1}  </label>
                 <button onClick={()=>next()}>Next</button>

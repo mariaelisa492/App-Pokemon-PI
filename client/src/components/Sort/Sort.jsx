@@ -1,9 +1,13 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './sort.scss'
+
 
 export const Sort = ({pokeCurrent, setPokeCurrent, pokeTotal}) => {
 
-    const filterAndOrderBy=(value)=>{
+    const [event] = useState("");
+
+    const filterAndOrderBy=(event)=>{
+        const value = event.target.value
         switch(value){
 			case 'asc':
 				orderPokeAlphabet(value);
@@ -54,7 +58,7 @@ export const Sort = ({pokeCurrent, setPokeCurrent, pokeTotal}) => {
     return (
         <div>
             <div className="dropdown">
-                <select name="order_filter" onChange={event => filterAndOrderBy(event.target.value)}>
+                <select name="order_filter" onChange={filterAndOrderBy} value={event}>
                     <option>Filter/Order by</option>
                     <option value="asc">A to Z</option>
                     <option value="desc">Z to A</option>

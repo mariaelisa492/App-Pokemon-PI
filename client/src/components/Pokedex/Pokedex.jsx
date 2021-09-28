@@ -5,6 +5,7 @@ import {Search} from '../Search/Search';
 import { Clear } from '../Clear/Clear';
 import { Sort } from '../Sort/Sort';
 import { Pagination } from '../Pagination/Pagination';
+import {PokeNotFound} from '../pokeNotFound/PokeNotFound'
 import './pokedex.scss';
 
 
@@ -21,7 +22,7 @@ export const Pokedex = ({pokeTotal}) => {
             <TypesPokemon setPokeCurrent={setPokeCurrent}/>
             <Sort pokeTotal={pokeTotal} pokeCurrent={pokeCurrent} setPokeCurrent={setPokeCurrent}/>
             <Clear />
-            <CardList pokeCurrent={pokeCurrent}/>
+            {(pokeCurrent.length > 0 || (pokeCurrent.name !== undefined && pokeCurrent.name !== 'Error'))? <CardList pokeCurrent={pokeCurrent}/> : <PokeNotFound/>}
             <Pagination pokeTotal={pokeTotal} setPokeCurrent={setPokeCurrent}/>
         </div>
     )

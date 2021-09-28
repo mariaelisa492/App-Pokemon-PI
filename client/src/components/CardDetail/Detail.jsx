@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router';
 import { getPokemonDetail } from '../../actions';
 import imgTypes from '../../helpers/powerTypesIcon';
-import { Button } from '../Button/Button';
+import Loader from '../Loader/Loader';
 import './detail.scss'
 
 export const Detail = () => {
@@ -27,7 +27,7 @@ export const Detail = () => {
             {sprite && types && name ?
                 <main className="containerDetail">
                     <div className="detailCard">
-                        <h2 className="capitalizeText">{name}</h2>
+                        <h1 className="capitalizeText">{name}</h1>
                         <ul className="typelist">
                             {types.map(type => (
                                 <li type="none" key={id} className="typeName">
@@ -87,7 +87,7 @@ export const Detail = () => {
                         </div>
                     </div>
                 </main>
-                : <Button />
+                : <Loader />
             }
         </>
     )

@@ -11,6 +11,8 @@
         transition: transform 0.2s;
         text-decoration: none;
         color:black;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 900 bolder;
 
         &:focus,
         &:hover {
@@ -29,13 +31,12 @@
             }
         }
 
-        .name {
-            font-size: 1.5rem;
-            font-weight: 600;
-            margin-bottom: .25rem;
-            white-space: nowrap;
-
-            color: black;
-        }
+        // .name {
+        //     font-size: 5rem;
+        //     font-weight: 100;
+        //     margin-bottom: .25rem;
+        //     white-space: nowrap;
+        //     color: black;
+        // }
     }
 }

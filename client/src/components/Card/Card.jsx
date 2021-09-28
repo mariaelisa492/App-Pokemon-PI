@@ -9,7 +9,7 @@ export const Card = ({ id, name, sprite, types }) => {
             <Link to={'detail/' + id}>
                 <a>
                     <div>
-                        <h3 className='name, capitalizeText'>{name}</h3>
+                        <h3 className='capitalizeText'>{name}</h3>
                         <ul className='typeList'>
                             {types.map(type => (
                                 <img src={img[type.name]} alt={`Type: ${type.name}`}/>
