@@ -7,12 +7,12 @@ export const Card = ({ id, name, sprite, types }) => {
     return (
         <div className='pokemonCard'>
             <Link to={'detail/' + id}>
-                <a>
+                <button>
                     <div>
                         <h3 className='capitalizeText'>{name}</h3>
                         <ul className='typeList'>
                             {types.map(type => (
-                                <img src={img[type.name]} alt={`Type: ${type.name}`}/>
+                                <img src={img[type.name]} alt={`Type: ${type.name}`} key={type.name}/>  //le paso la propiedad como type.name para que renderize cada type
                             ))}
                         </ul>
                     </div>
@@ -23,7 +23,7 @@ export const Card = ({ id, name, sprite, types }) => {
                             alt={name}    
                         />
                     </div>
-                </a>
+                </button>
             </Link>
         </div>
     )

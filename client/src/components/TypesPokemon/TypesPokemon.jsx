@@ -17,7 +17,7 @@ export const TypesPokemon = ({setPokeCurrent}) => {
 
     useEffect(() => {
         setPokeCurrent(pokeFilter)
-    }, [pokeFilter, setPokeCurrent])
+    }, [pokeFilter, setPokeCurrent])   //atento cambios filter
     
     
     return (

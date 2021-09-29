@@ -11,9 +11,10 @@ import './pokedex.scss';
 
 export const Pokedex = ({pokeTotal}) => {
     const cards = 9;
-    const [pokeCurrent, setPokeCurrent] = useState(pokeTotal);
+    const [pokeCurrent, setPokeCurrent] = useState(pokeTotal);   //lo cargo
+    
     useEffect( () => {
-        setPokeCurrent([...pokeTotal].splice(0,cards))
+        setPokeCurrent([...pokeTotal].splice(0,cards))  //copia del poketotal
     },[pokeTotal])
 
     return (

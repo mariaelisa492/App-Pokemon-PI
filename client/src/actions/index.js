@@ -3,7 +3,7 @@ import axios from 'axios';
 export const getPokemons = () => {
     return async (dispatch) => {
         try {
-            const dataPokemons = await axios.get("http://localhost:3001/pokemons");
+            const dataPokemons = await axios.get("http://localhost:3001/pokemons");  //Back
             return dispatch({
                 type: 'GET_POKEMONS',
                 payload: dataPokemons.data
@@ -30,7 +30,9 @@ export const getPokemonsTypes = () => {
 
 export const filterType = (type) => {
     return async (dispatch) =>
-        dispatch({ type: 'POKEMON_FILTER_TYPE', payload: type })
+        dispatch({ 
+            type: 'POKEMON_FILTER_TYPE', 
+            payload: type })
 };
 
 export const getPokemonDetail = (id) => {

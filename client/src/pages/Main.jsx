@@ -10,4 +10,4 @@ export const Main = () => {
             <Button link={'/home'} name={"Let's Go"} classname={"primary"}/>
         </div>
     )
-}
+};

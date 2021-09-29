@@ -23,7 +23,7 @@ export const Search = ({setPokeCurrent}) => {
 
     useEffect(() => {
         setPokeCurrent(pokeFilter)
-    }, [pokeFilter, setPokeCurrent])
+    }, [pokeFilter, setPokeCurrent])  //atentos al pokeFilter
 
     return (
         <div className='search'>
@@ -39,14 +39,3 @@ export const Search = ({setPokeCurrent}) => {
         </div>
     )
 }
-
-
-
-// const handleSubmit = (e) =>{
-//     e.preventDefault();         //previene que se recargue la pagina con el submit(recibe el evento del enter)
-//     console.log('handleSubmit')
-//         if (inputValue.trim().length > 2){
-//             setCategories(cats => [inputValue, ...cats,]);
-//             setInputValue('');
-//         }
-// }

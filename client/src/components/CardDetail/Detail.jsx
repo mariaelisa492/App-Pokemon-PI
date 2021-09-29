@@ -30,7 +30,7 @@ export const Detail = () => {
                         <h1 className="capitalizeText">{name}</h1>
                         <ul>
                             {types.map(type => (
-                                <li type="none" key={id} >
+                                <li type="none" key={type.name} >
                                     <img className="imgTypes" src={imgTypes[type.name]} alt={`Type: ${type.name}`} />
                                     {type.name.replace(/\b[a-z]/g, c => c.toUpperCase())}
                                 </li>

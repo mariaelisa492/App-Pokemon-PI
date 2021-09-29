@@ -32,6 +32,13 @@
             margin: 50px auto;
             text-align: center;
             position: relative;
+
+            .error-input{
+                color: red;
+                font-size: 11px;
+                margin-top: -10px;
+                margin-bottom: 11px;
+            }
         }
 
         .divInputCreate{

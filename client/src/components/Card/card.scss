@@ -4,7 +4,7 @@
     display: flex;
     justify-content: space-around;
     
-    a {
+    button {
         display: flex;
         background: url('../../assets/img/pokeball.svg') no-repeat;
         border-radius: 0.3125rem;
@@ -13,6 +13,12 @@
         color:black;
         font-family: 'Ubuntu', sans-serif;
         font-size:18px;
+        border: none;
+        cursor: pointer;
+
+        h3{
+            color:black
+        }
 
         &:focus,
         &:hover {

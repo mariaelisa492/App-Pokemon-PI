@@ -4,7 +4,7 @@ import './sort.scss'
 
 export const Sort = ({pokeCurrent, setPokeCurrent, pokeTotal}) => {
 
-    const [event] = useState("");
+    const [event] = useState("");       //event en estado inicial
 
     const filterAndOrderBy=(event)=>{
         const value = event.target.value
@@ -33,8 +33,8 @@ export const Sort = ({pokeCurrent, setPokeCurrent, pokeTotal}) => {
         if(order==='asc') {
             setPokeCurrent([...pokeCurrent].sort((a,b)=>{
                 if(a.name > b.name) return 1
-                else if(a.name < b.name) return -1
-                else return 0
+                else if(a.name < b.name) return -1        //unicode
+                else return 0            //sin cambio
             }));
         }else {
             setPokeCurrent([...pokeCurrent].sort((a,b)=>{
