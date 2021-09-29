@@ -7,7 +7,7 @@ const router = Router();
 //ruta a pokemons  y pokemons/?name
 router.get('/', async (req, res) => {
     try {
-        const {name} = req.query;
+        const {name} = req.query;    //cuando hago el search en el front
         if(!name) { 
             return res.status(200).send(await getAllPoke());
         }else{
