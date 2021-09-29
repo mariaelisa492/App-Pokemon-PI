@@ -61,7 +61,7 @@ export const getPokemonName = (name) => {
     }
 }
 
-export const addPokemon = (newPoke) => {
+export const addPokemon = (newPoke) => {   //transformo pokemon creado en el objeto que la DB necesita
     return async () => {
         try {
             const objNewPoke = {
@@ -74,7 +74,6 @@ export const addPokemon = (newPoke) => {
                 height: newPoke.height,
                 types: [newPoke.type1, newPoke.type2],
             }
-            console.log("newPoke2", objNewPoke)
             const createPoke = await axios.post("http://localhost:3001/pokemons", objNewPoke);
             return console.log(createPoke.data)
         } catch (error) {

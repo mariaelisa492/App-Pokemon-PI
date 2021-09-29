@@ -17,7 +17,7 @@ function App() {
         <Route exact path = "/home" component={Home}/>
         <Route exact path = "/detail/:id" component={PokemonDetail}/>
         <Route exact path = "/create" component={PokemonCreate}/>
-        <Route path = "/notFound" exact={true} component={NotFound}/>
+        <Route exact path = "/notFound" component={NotFound}/>
         <Redirect from='*' to='/notFound'/>
       </Switch>
       

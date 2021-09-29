@@ -1,11 +1,12 @@
 .error {
-	background: linear-gradient(#fbfbfbeb, #a67bdeeb);
+	background-image: url("../assets/img/error_404.jpg");
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
 	padding: 0px 30px;
-	min-height: calc(100vh - 96px);
+    min-height: calc(111vh - 103px);
+    height: 577px;
     font-family: "Quicksand", sans-serif;
     
 
@@ -18,7 +19,7 @@
     }
 
     .error__container--title {
-        font-size: 60px;
+        font-size: 80px;
         margin: 0;
         animation-name: latido;
         animation-duration: 5s;

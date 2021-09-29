@@ -6,8 +6,7 @@ export const PokemonCreate = () => {
     return (
         <div>
             <NavBar/>
-            <Form />
-            
+            <Form /> 
         </div>
     )
 }

@@ -6,8 +6,8 @@ export const NotFound = () => {
         <div className="error">
             <div className="error__container">
                 <h2 className="error__container--title">404</h2>
-                <p>Page not found</p>
-                <Link to="/">Back</Link>
+                <p>Sorry! the page you're looking for is not here</p>
+                <Link to="/">Back home</Link>
             </div>
         </div>
     );

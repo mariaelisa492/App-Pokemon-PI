@@ -12,7 +12,7 @@ export const NavBar = () => {
     return (
         <header className='navBar'>
             <div className='return'>
-                <Link to={'/main'}> <img src={pokebola} alt="pokepola" height='75' width='75' /></Link>
+                <Link to={'/main'}> <img src={pokebola} alt="pokepola" height='70' width='70' /></Link>
             </div>
             <div>
                 <Link to={'/home'}>
