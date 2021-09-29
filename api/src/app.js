@@ -1,6 +1,6 @@
-const express = require('express');
+const express = require('express');  //server
 const cookieParser = require('cookie-parser');
-const morgan = require('morgan');
+const morgan = require('morgan'); //middlewere
 const routes = require('./routes/index.js');
 
 require('./db.js');
@@ -22,9 +22,7 @@ server.use((req, res, next) => {   //esto me permite hacer peticiones del tipo g
 });
 
 server.use('/', routes);
-// server.get('/', (req, res) => {      REVISAR PARA MANDAR
-//   res.send('Hello to memories tribe nomina API');
-// });
+
 
 // Error catching endware.
 server.use((err, req, res, next) => { // eslint-disable-line no-unused-vars

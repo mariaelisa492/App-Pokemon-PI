@@ -30,7 +30,6 @@ router.get('/:id', async (req, res) => {
         const {id} = req.params;
         console.log(id)
         const pokeFoundId = await getPokeById(id);
-        //console.log('pokeFound',pokeFoundId);
         if(pokeFoundId) return res.status(200).json(pokeFoundId)
 
     } catch (error) {
